@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">    <!--加入thymeleaf名称空间，就有了语法提示 -->
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+<body>
+<h1 th:text="${msg}">欢迎</h1>
+<h2>
+    <a href="https://jx3.xoyo.com" th:href="${link}">链接至剑三官方网站</a>  </br>
+    <a href="https://jx3.xoyo.com" th:href="@{link}">链接至剑三官方网站</a>  </br>
+</h2>
+</body>
+</html>
